@@ -27,7 +27,7 @@ class JogoAdivinhacao {
                     palpiteUsuario = leitura.nextInt();
 
                     if (palpiteUsuario >= 0 && palpiteUsuario <= 99) {
-                        break; 
+                        break;
                     } else {
                         System.out.println("[AVISO] Número inválido! Por favor, digite um valor entre 0 e 99.");
                     }
