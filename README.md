@@ -1,4 +1,4 @@
-# 🎮 Jogo de Adivinhação v2.0 (Robust Edition)
+# 🎮 Jogo de Adivinhação 
 
 Um desafio de lógica em Java focado em interatividade e validação de dados, onde o jogador deve descobrir um número secreto.
 
