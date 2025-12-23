@@ -1,42 +1,24 @@
-# 🎮 Jogo de Adivinhação em Java
+# 🎮 Jogo de Adivinhação 
 
-Um desafio simples de lógica desenvolvido em Java onde o jogador deve adivinhar um número secreto gerado aleatoriamente pelo computador.
+Um desafio de lógica em Java focado em interatividade e validação de dados, onde o jogador deve descobrir um número secreto.
 
 ## 📝 Descrição do Projeto
 
-O programa sorteia um número entre **0 e 99** e oferece ao usuário **5 tentativas** para acertar. A cada erro, o jogo fornece uma dica informando se o número secreto é maior ou menor que o chute atual.
+O programa sorteia um número aleatório e desafia o usuário a acertá-lo em **5 tentativas**. Esta versão inclui um sistema de proteção que impede o desperdício de chances caso o usuário digite valores fora do intervalo permitido.
 
-## 🚀 Funcionalidades
+## 🚀 Funcionalidades Principais
 
-* **Geração Aleatória:** Utiliza a classe `Random` do Java.
-* **Sistema de Dicas:** Informa se o número é maior ou menor para ajudar o jogador.
-* **Contador de Tentativas:** Exibe quantas chances o usuário ainda possui.
-* **Interatividade:** Entrada de dados via console com a classe `Scanner`.
+* **Geração Aleatória:** Utiliza a classe `Random` para definir um número entre 0 e 99.
+* **Validação de Entrada:** Um laço `while(true)` garante que apenas palpites entre 0 e 99 sejam processados, sem penalizar o jogador por erros de digitação.
+* **Dicas Dinâmicas:** O sistema informa se o número secreto é maior ou menor que o palpite atual através de operadores relacionais.
+* **Gestão de Recursos:** Implementação de `try-with-resources` para o fechamento automático do `Scanner`.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Conceitos Java
 
-* **Java JDK 17+** (ou versões anteriores).
-* **Classe `java.util.Scanner**` para entrada de dados.
-* **Classe `java.util.Random**` para geração do número aleatório.
-
-## ⚙️ Como executar
-
-1. Certifique-se de ter o Java instalado em sua máquina.
-2. Copie o código para um arquivo chamado `JogoAdivinhacao.java`.
-3. Abra o terminal na pasta do arquivo e compile:
-```bash
-javac JogoAdivinhacao.java
-
-```
-
-
-4. Execute o programa:
-```bash
-java JogoAdivinhacao
-
-```
-
+* **OpenJDK 25:** Compatível com as versões mais recentes da linguagem.
+* **Operadores Lógicos:** Uso do operador `&&` (AND) para validar o intervalo numérico.
+* **Controle de Fluxo:** Estruturas `for` para as tentativas e `if/else` para a lógica de acerto.
+* **Tratamento de Strings:** Mensagens claras e interativas utilizando quebras de linha formatadas.
 
 
 ---
-
